@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,13 +8,13 @@ version = "0.1.0"
 description = "Cordial: a calendar and clock of 364 days (13 x 28 = 52 x 7), a 26-hour day and a 364-grau circle, with converters to the Gregorian system."
 readme = "README.md"
 requires-python = ">=3.9"
-license = { text = "Apache-2.0" }
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
 authors = [{ name = "Light Cross Holdings Corporation" }]
 keywords = ["calendar", "clock", "cordial", "equinox", "julian day"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: Apache Software License",
     "Programming Language :: Python :: 3",
     "Topic :: Scientific/Engineering :: Astronomy",
     "Topic :: Software Development :: Libraries",
@@ -26,7 +26,6 @@ Homepage = "https://cordial.lxcor.com"
 
 [tool.setuptools]
 package-dir = { "" = "src" }
-license-files = ["LICENSE", "NOTICE"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
