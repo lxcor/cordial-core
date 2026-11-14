@@ -21,4 +21,4 @@ from cordial.gregorian_date import GregorianDate
 from cordial.gregorian_datetime import GregorianDatetime
 from cordial.gregorian_time import GregorianTime
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
