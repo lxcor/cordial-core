@@ -23,6 +23,8 @@ dependencies = []
 
 [project.urls]
 Homepage = "https://cordial.lxcor.com"
+Repository = "https://github.com/lxcor/cordial-core"
+Issues = "https://github.com/lxcor/cordial-core/issues"
 
 [tool.setuptools]
 package-dir = { "" = "src" }
