@@ -174,7 +174,7 @@ cyan = {
 
 blue = {
     "name": "Blue",
-    "latin": "Livius",
+    "latin": "Lividus",
     "code": "Li",
     "html": "blue"
 }

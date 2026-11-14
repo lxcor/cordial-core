@@ -32,6 +32,9 @@ def days_of(year):
 
 
 class DateStrings(unittest.TestCase):
+    def test_blue_is_lividus(self):
+        self.assertEqual([c['latin'] for c in CordialConst.COLORS if c['name'] == 'Blue'], ['Lividus'])
+
     def test_no_space_before_the_comma(self):
         for text in (CordialDate(2027, 1, 1).to_custom_date(), CordialDate(2027, 1, 1).to_date_string(), CordialDate(2027, 13, 28).to_full_date()):
             self.assertNotIn(' ,', text)
