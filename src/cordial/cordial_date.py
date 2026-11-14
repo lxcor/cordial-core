@@ -161,7 +161,7 @@ class CordialDate:
         return self.to_string("%a, %b %d")
 
     def to_custom_date(self):
-        return self.to_string("%WoMc-%DoWc day of %B , %Y")
+        return self.to_string("%WoMc-%DoWc day of %B, %Y")
 
     def to_mm_dd_yyyy(self):
         return self.to_string("%m/%d/%Y")

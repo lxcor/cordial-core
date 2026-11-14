@@ -31,6 +31,13 @@ def days_of(year):
     return days + [CordialVoidDay(year, number) for number in range(1, CordialVoidDay(year).n_void_days() + 1)]
 
 
+class DateStrings(unittest.TestCase):
+    def test_no_space_before_the_comma(self):
+        for text in (CordialDate(2027, 1, 1).to_custom_date(), CordialDate(2027, 1, 1).to_date_string(), CordialDate(2027, 13, 28).to_full_date()):
+            self.assertNotIn(' ,', text)
+        self.assertTrue(CordialDate(2027, 1, 1).to_custom_date().endswith('Taurus, %d' % CordialConst.to_aa(2027)))
+
+
 class Equinox(unittest.TestCase):
 
     def test_the_table_ships_with_the_package_and_covers_2019_to_2052(self):
