@@ -112,6 +112,7 @@ WINTER_SOLSTICE = 3
 
 CORDIAL_DAY_POLARITY_POSITIVE = "+"
 CORDIAL_DAY_POLARITY_NEGATIVE = "-"
+CORDIAL_DAY_POLARITY_NEUTRAL = "0"  # the Void Days carry no sign
 
 # Fixit
 DEGREES_IN_GRAU = 0.989010989010989
@@ -134,7 +135,7 @@ cseconds_IN_GMINUTE = 52
 # Yellow: Flavus (Fl)
 # Green: Viridis (Vi)
 # Cyan: Caeruleus (Cy)
-# Blue: Livens (Li)
+# Blue: Lividus (Li)
 # Magenta: Ostrum (Ot)
 
 red = {

@@ -32,6 +32,17 @@ def days_of(year):
 
 
 class DateStrings(unittest.TestCase):
+    def test_polarity_alternates_and_void_days_are_neutral(self):
+        for year in (2026, 2044, 2052):
+            signs = [CordialDate(year, month, day).get_day_polarity() for month in range(1, 14) for day in range(1, 29)]
+            self.assertEqual((signs.count('+'), signs.count('-')), (182, 182), year)
+            self.assertEqual(signs[0], '+', year)
+            self.assertEqual(signs[:4], ['+', '-', '+', '-'], year)
+            for n in range(1, CordialVoidDay(year).n_void_days() + 1):
+                void = CordialVoidDay(year, n)
+                self.assertEqual(void.get_day_polarity(), '0', (year, n))
+                self.assertNotIn(void.get_day_polarity_color(), ('-', 'Red', 'Green'), (year, n))
+
     def test_blue_is_lividus(self):
         self.assertEqual([c['latin'] for c in CordialConst.COLORS if c['name'] == 'Blue'], ['Lividus'])
 

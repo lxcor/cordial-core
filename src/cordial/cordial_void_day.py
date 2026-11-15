@@ -1,5 +1,6 @@
 import datetime
 
+from cordial import cordial_const as CordialConst
 from cordial.cordial_date import CordialDate
 from cordial.cordial_equinox import CordialEquinox
 from cordial.cordial_util import CordialUtil
@@ -73,7 +74,7 @@ class CordialVoidDay:
         return "-"
 
     def get_day_polarity(self):
-        return "-"
+        return CordialConst.CORDIAL_DAY_POLARITY_NEUTRAL
 
     def get_day_polarity_color(self):
-        return "-"
+        return "Gray"
