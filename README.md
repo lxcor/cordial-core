@@ -1,5 +1,7 @@
 # Cordial (`lxcor-cordial`)
 
+By Alexandre Scozzafave Alves · [cordial.lxcor.com](https://cordial.lxcor.com)
+
 Cordial is a calendar and clock built on two numbers, **364** and **52**: a year of 364 days (13 months of 28 days, 52 weeks of 7),
 a day of 26 hours of 52 minutes of 52 seconds, and a circle of 364 grau (a quarter circle is 91). A Cordial day **begins at noon**; the
 year begins at noon on the date of the **March equinox**, and the days left after the 364th (one or two, as the sky dictates) are the
